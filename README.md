@@ -160,13 +160,13 @@ pyYAML: A Python library for parsing and generating YAML configuration files in 
 ### A) XSS Module
 ```bash
 # All reflected XSS payloads
-python payload_gen.py --Module xss --Type reflected
+python VulnCraft.py --Module xss --Type reflected
 
 # All stored XSS payloads
-python payload_gen.py --Module xss --Type stored
+python VulnCraft.py --Module xss --Type stored
 
 # All DOM-based XSS payloads
-python payload_gen.py --Module xss --Type dom
+python VulnCraft.py --Module xss --Type dom
 ```
 
 ### B) SQL Injection Module
@@ -245,13 +245,13 @@ python VulnCraft.py -m cmdinj -t linux --Export json --Out cmdinj.json
 
 ```bash
 # Reflected XSS in HTML context, URL encoded
-python payload_gen.py --Module xss --Type reflected --context html --Encode url
+python VulnCraft.py --Module xss --Type reflected --context html --Encode url
 
 # Critical risk payloads only
-python payload_gen.py --Module xss --risk critical --Output json
+python VulnCraft.py --Module xss --risk critical --Output json
 
 # Auto-executing payloads
-python payload_gen.py --Module xss --trigger auto-executing
+python VulnCraft.py --Module xss --trigger auto-executing
 ```
 
 ---
